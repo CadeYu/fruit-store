@@ -3,8 +3,6 @@ package com.supermarket;
 import com.supermarket.service.PricingService;
 
 /**
- * 中文异常信息验证演示
- * 展示所有异常信息都已改为中文
  * 
  * @author SupermarketPricingSystem
  * @version 1.0
