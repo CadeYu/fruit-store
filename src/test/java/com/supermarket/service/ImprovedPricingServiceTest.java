@@ -226,9 +226,7 @@ public class ImprovedPricingServiceTest {
     
     /**
      * 测试批量顾客的边界值场景 - 100元阈值的关键边界点测试
-     * 
-     * ⭐ 这是最重要的边界值测试，面试加分项 ⭐
-     * 
+     **
      * 测试目标：验证批量折扣规则在100元阈值附近的准确性
      * 业务规则：草莓8折 + 满100元减10元
      * 边界点：99元（不减）、100元（减10）、101元（减10）
@@ -333,8 +331,6 @@ public class ImprovedPricingServiceTest {
      * 验证要点：
      * - 所有顾客类型的输入验证一致性
      * - 异常处理的统一性
-     * - 防御性编程在所有方法中的实现
-     * - 错误信息的中文化和准确性
      */
     @Test
     @DisplayName("所有顾客类型 - 反例测试（异常输入）")
@@ -403,9 +399,7 @@ public class ImprovedPricingServiceTest {
     
     /**
      * 测试计算精度场景
-     * 
-     * 测试目标：验证货币计算的精确性，特别是小数运算
-     * 重点关注：浮点数运算可能产生的精度问题
+     *
      * 
      * 测试用例：
      * 1. 草莓8折精度：草莓1斤×(13×0.8) = 1×10.4 = 10.4元
@@ -415,10 +409,7 @@ public class ImprovedPricingServiceTest {
      * - 货币计算的精度控制（0.01元）
      * - 折扣计算不会产生舍入误差
      * - 常量使用确保计算一致性
-     * 
-     * 技术细节：
-     * - 使用PricingConstants.Precision.CURRENCY_PRECISION控制精度
-     * - 双重验证：既验证常量计算，也验证具体数值
+     *
      */
     @Test
     @DisplayName("计算精度测试")
