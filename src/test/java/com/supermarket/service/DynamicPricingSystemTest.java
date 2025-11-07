@@ -70,8 +70,7 @@ public class DynamicPricingSystemTest {
      * - 运行时动态添加商品的能力
      * - 新商品的价格计算准确性
      * - 系统的可扩展性
-     * 
-     * 🎯 这是扩展性的核心测试！
+     *
      */
     @Test
     @DisplayName("🎯 动态添加新商品测试 - 扩展性核心验证")
@@ -125,7 +124,7 @@ public class DynamicPricingSystemTest {
      * - 多种折扣率的精确计算
      * - 折扣配置的动态性
      * 
-     * 🚀 这展示了系统的超强灵活性！
+     *
      */
     @Test
     @DisplayName("🚀 动态折扣配置测试 - 超强灵活性验证")
@@ -297,8 +296,6 @@ public class DynamicPricingSystemTest {
      * - 系统对新业务场景的适应能力
      * - 复杂促销规则的支持能力
      * - 完全动态配置的可行性
-     * 
-     * 🌟 这是扩展性的终极展示！
      */
     @Test
     @DisplayName("🌟 终极扩展性测试 - 自定义商品类别和促销")
@@ -344,7 +341,7 @@ public class DynamicPricingSystemTest {
         assertEquals(0, expected.compareTo(total), 
                     "蔬菜促销计算错误：预期" + expected + "元，实际" + total + "元");
         
-        System.out.println("🌟 终极扩展性测试通过！");
+        System.out.println(" 终极扩展性测试通过！");
         System.out.println("   商品目录：" + vegetableCatalog.getProductCount() + "种蔬菜");
         System.out.println("   促销规则：" + vegetablePromo.toString());
         System.out.println("   购买记录：" + vegetablePurchase.toString());
