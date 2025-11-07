@@ -341,7 +341,6 @@ public class DynamicPricingSystemTest {
         assertEquals(0, expected.compareTo(total), 
                     "蔬菜促销计算错误：预期" + expected + "元，实际" + total + "元");
         
-        System.out.println(" 终极扩展性测试通过！");
         System.out.println("   商品目录：" + vegetableCatalog.getProductCount() + "种蔬菜");
         System.out.println("   促销规则：" + vegetablePromo.toString());
         System.out.println("   购买记录：" + vegetablePurchase.toString());
