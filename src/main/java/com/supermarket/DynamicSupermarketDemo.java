@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 public class DynamicSupermarketDemo {
     
     public static void main(String[] args) {
-        System.out.println("=== 🚀 动态超市定价系统演示 - 彻底解决扩展性问题 ===\n");
+        System.out.println("动态超市定价系统演示 - 彻底解决扩展性问题 ===\n");
         
         // 演示1：动态添加新商品
         demonstrateProductExtensibility();
@@ -29,14 +29,14 @@ public class DynamicSupermarketDemo {
         // 演示4：运行时商品管理
         demonstrateRuntimeManagement();
         
-        System.out.println("=== ✅ 演示完成：系统扩展性问题已彻底解决！ ===");
+        System.out.println(" 演示完成：系统扩展性问题已彻底解决！ ===");
     }
     
     /**
      * 演示商品扩展性：动态添加新商品种类
      */
     private static void demonstrateProductExtensibility() {
-        System.out.println("📦 【演示1：动态商品扩展能力】");
+        System.out.println("【演示1：动态商品扩展能力】");
         
         // 创建空的商品目录
         ProductCatalog catalog = new ProductCatalog();
@@ -72,7 +72,7 @@ public class DynamicSupermarketDemo {
      * 演示折扣配置的灵活性：任意商品任意折扣
      */
     private static void demonstrateDiscountFlexibility() {
-        System.out.println("💰 【演示2：灵活折扣配置能力】");
+        System.out.println("【演示2：灵活折扣配置能力】");
         
         // 使用扩展商品目录
         ProductCatalog catalog = ProductCatalog.createExtendedCatalog();
@@ -113,7 +113,7 @@ public class DynamicSupermarketDemo {
      * 演示复杂促销场景：黑色星期五大促销
      */
     private static void demonstrateComplexPromotions() {
-        System.out.println("🛍️ 【演示3：复杂促销场景 - 黑色星期五】");
+        System.out.println("【演示3：复杂促销场景 - 黑色星期五】");
         
         ProductCatalog catalog = ProductCatalog.createExtendedCatalog();
         
@@ -156,14 +156,14 @@ public class DynamicSupermarketDemo {
         
         BigDecimal savings = originalTotal.subtract(finalTotal);
         System.out.println("总共节省：" + savings + "元");
-        System.out.println("✅ 复杂促销场景测试成功！\n");
+        System.out.println("复杂促销场景测试成功！\n");
     }
     
     /**
      * 演示运行时商品管理能力
      */
     private static void demonstrateRuntimeManagement() {
-        System.out.println("🔧 【演示4：运行时商品管理能力】");
+        System.out.println("【演示4：运行时商品管理能力】");
         
         // 创建可管理的商品目录
         ProductCatalog managedCatalog = new ProductCatalog();
@@ -208,7 +208,7 @@ public class DynamicSupermarketDemo {
         System.out.println("移除商品：" + (removed != null ? removed.getChineseName() : "无"));
         System.out.println("移除后商品数量：" + managedCatalog.getProductCount());
         
-        System.out.println("✅ 运行时商品管理测试成功！\n");
+        System.out.println("运行时商品管理测试成功！\n");
     }
     
     /**
