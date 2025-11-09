@@ -18,13 +18,13 @@ public class DynamicSupermarketDemo {
         System.out.println("动态超市定价系统演示 - 彻底解决扩展性问题 ===\n");
         
         // 演示1：动态添加新商品
-        demonstrateProductExtensibility();
+//        demonstrateProductExtensibility();
         
         // 演示2：灵活的折扣配置
-        demonstrateDiscountFlexibility();
+//        demonstrateDiscountFlexibility();
         
         // 演示3：复杂促销场景
-        demonstrateComplexPromotions();
+//        demonstrateComplexPromotions();
         
         // 演示4：运行时商品管理
         demonstrateRuntimeManagement();
@@ -51,7 +51,7 @@ public class DynamicSupermarketDemo {
                .addProduct("CHERRY", "Cherry", "樱桃", new BigDecimal("40.00"), "核果类");
         
         System.out.println("动态添加后：" + catalog.getProductCount() + "种商品");
-        System.out.println(catalog.toString());
+        System.out.println(catalog);
         
         // 测试新商品购买
         DynamicPurchase purchase = new DynamicPurchase(catalog);
@@ -65,7 +65,7 @@ public class DynamicSupermarketDemo {
         BigDecimal total = rule.calculateTotalAmount(purchase);
         System.out.println("购买记录：" + purchase.toString());
         System.out.println("总价：" + total + "元");
-        System.out.println("✅ 新商品添加和购买测试成功！\n");
+        System.out.println(" 新商品添加和购买测试成功！\n");
     }
     
     /**
@@ -106,7 +106,7 @@ public class DynamicSupermarketDemo {
         System.out.println("促销配置：" + multiPromo.toString());
         System.out.println("购买记录：" + multiPurchase.toString());
         System.out.println("折扣后总价：" + multiTotal + "元");
-        System.out.println("✅ 多商品灵活折扣测试成功！\n");
+        System.out.println(" 多商品灵活折扣测试成功！\n");
     }
     
     /**

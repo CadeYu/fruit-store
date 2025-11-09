@@ -73,7 +73,7 @@ public class DynamicPricingSystemTest {
      *
      */
     @Test
-    @DisplayName("🎯 动态添加新商品测试 - 扩展性核心验证")
+    @DisplayName("动态添加新商品测试 - 扩展性核心验证")
     public void testDynamicProductAddition() {
         // 创建空的商品目录（不使用默认商品）
         ProductCatalog customCatalog = new ProductCatalog();
@@ -107,7 +107,7 @@ public class DynamicPricingSystemTest {
         assertEquals(0, expected.compareTo(total), 
                     "新商品价格计算错误：预期" + expected + "元，实际" + total + "元");
         
-        System.out.println("✅ 动态添加商品测试通过：" + purchase.toString());
+        System.out.println(" 动态添加商品测试通过：" + purchase.toString());
     }
     
     /**
@@ -127,7 +127,7 @@ public class DynamicPricingSystemTest {
      *
      */
     @Test
-    @DisplayName("🚀 动态折扣配置测试 - 超强灵活性验证")
+    @DisplayName(" 动态折扣配置测试 - 超强灵活性验证")
     public void testDynamicDiscountConfiguration() {
         // 创建复杂的折扣配置
         DynamicDiscountConfig complexDiscount = new DynamicDiscountConfig("复杂促销活动");
@@ -153,7 +153,7 @@ public class DynamicPricingSystemTest {
         assertEquals(0, expected.compareTo(total), 
                     "复杂折扣计算错误：预期" + expected + "元，实际" + total + "元");
         
-        System.out.println("✅ 动态折扣配置测试通过：" + complexDiscount.toString());
+        System.out.println(" 动态折扣配置测试通过：" + complexDiscount.toString());
     }
     
     /**
@@ -168,7 +168,7 @@ public class DynamicPricingSystemTest {
      * - 复杂业务场景的适应性
      */
     @Test
-    @DisplayName("🛍️ 黑色星期五大促销测试")
+    @DisplayName(" 黑色星期五大促销测试")
     public void testBlackFridayPromotion() {
         // 使用预定义的黑色星期五促销配置
         DynamicDiscountConfig blackFridayConfig = DynamicDiscountConfig.createBlackFridayPromotion();
@@ -188,7 +188,7 @@ public class DynamicPricingSystemTest {
         assertEquals(0, expected.compareTo(total), 
                     "黑色星期五促销计算错误：预期" + expected + "元，实际" + total + "元");
         
-        System.out.println("✅ 黑色星期五大促销测试通过，总计：" + total + "元");
+        System.out.println(" 黑色星期五大促销测试通过，总计：" + total + "元");
     }
     
     /**
@@ -203,7 +203,7 @@ public class DynamicPricingSystemTest {
      * - 装饰器模式在动态系统中的正确实现
      */
     @Test
-    @DisplayName("💰 动态批量折扣边界值测试")
+    @DisplayName(" 动态批量折扣边界值测试")
     public void testDynamicBulkDiscountBoundary() {
         // 创建批量折扣规则
         DynamicBulkDiscountRule bulkRule = new DynamicBulkDiscountRule(strawberryPromotionRule);
@@ -231,7 +231,7 @@ public class DynamicPricingSystemTest {
         assertEquals(0, expected100.compareTo(total100), 
                     "100.00元边界测试失败：预期" + expected100 + "元，实际" + total100 + "元");
         
-        System.out.println("✅ 动态批量折扣边界值测试通过");
+        System.out.println(" 动态批量折扣边界值测试通过");
     }
     
     /**
@@ -250,7 +250,7 @@ public class DynamicPricingSystemTest {
      * - 商品移除的安全性
      */
     @Test
-    @DisplayName("🔧 运行时商品管理测试")
+    @DisplayName(" 运行时商品管理测试")
     public void testRuntimeProductManagement() {
         // 创建可管理的商品目录
         ProductCatalog managedCatalog = new ProductCatalog();
@@ -283,7 +283,7 @@ public class DynamicPricingSystemTest {
         assertNotNull(removed, "应该成功移除商品");
         assertFalse(managedCatalog.hasProduct("PINEAPPLE"), "商品应该已被移除");
         
-        System.out.println("✅ 运行时商品管理测试通过");
+        System.out.println(" 运行时商品管理测试通过");
     }
     
     /**
@@ -298,7 +298,7 @@ public class DynamicPricingSystemTest {
      * - 完全动态配置的可行性
      */
     @Test
-    @DisplayName("🌟 终极扩展性测试 - 自定义商品类别和促销")
+    @DisplayName(" 终极扩展性测试 - 自定义商品类别和促销")
     public void testUltimateExtensibility() {
         // 创建全新的商品目录 - 蔬菜类
         ProductCatalog vegetableCatalog = new ProductCatalog();
